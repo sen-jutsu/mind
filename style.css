@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+header {
+  background-color: #4b8bec;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #333;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: #4b8bec;
+  border-radius: 5px;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #4b8bec;
+  border-bottom: 2px solid #4b8bec;
+  padding-bottom: 0.5rem;
+}
+
+.feature-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+.quote {
+  font-style: italic;
+  background-color: #e6f2ff;
+  padding: 1rem;
+  border-left: 4px solid #4b8bec;
+  margin: 1rem 0;
+}
+
+
+
+.breathing-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #4b8bec;
+  border-radius: 50%;
+  margin: 1rem auto;
+  animation: breathe 8s infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(0.8); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.mood-selector {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.mood-option {
+  cursor: pointer;
+  text-align: center;
+}
+
+.mood-option:hover {
+  transform: scale(1.1);
+}
+
+.progress-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #4b8bec;
+  border-radius: 5px;
+  width: 0%;
+  transition: width 1s;
+}
+
+.help-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+
+.help-button:hover {
+  background-color: #ff5252;
+}
+
+.daily-tip {
+  background-color: #fffacd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid #ffd700;
+}
